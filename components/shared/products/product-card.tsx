@@ -20,10 +20,11 @@ import ProductPrice from "./product-price";
             </CardHeader>
             <CardContent className="p-4 grid gap-4">
                 <div className="text-xs mb-2">
-                    { product.brand }
+                    { product.artist } <br/>
+                    { product.dimensions }
                 </div>
                 <Link href={ `product/${product.slug}`}>
-                    <h2 className="text-sm font-medium">
+                    <h2 className="text-sm font-semibold">
                         { product.name }
                     </h2>
                 </Link>
